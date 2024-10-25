@@ -8,7 +8,7 @@ from datetime import timedelta
 def getStockData(ticker) :
 
     base_url =" https://financialmodelingprep.com/api/v3/quote/"
-    key ="88bf8d3f535b2c1e1505ac38d74cf12b"
+    key =""
     full_url =base_url + ticker + "?apikey=" + key
     r = requests.get(full_url)    
     stock_data= r.json()
