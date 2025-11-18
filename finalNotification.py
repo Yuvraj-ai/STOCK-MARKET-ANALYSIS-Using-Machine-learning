@@ -39,7 +39,7 @@ print (textMessage)
 
 
 def sendMessage(text) :
-    token ="6902842074:AAGTh1HnuNI3W8cCFF9yoytAWFhvHrV3fBQ"
+    token ="6902842074:Your Token"
     receiver_id = 5514934613
     bot = telepot. Bot (token)
     bot.sendMessage(receiver_id, text)
@@ -56,3 +56,4 @@ def run_tasks():
     textmessage = generateMessage(real_time_data)
     sendMessage(textMessage)
 tl . start (block=True)
+
